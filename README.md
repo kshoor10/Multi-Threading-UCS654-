@@ -1,1 +1,9 @@
 # Multi-Threading-UCS654-
+Multithreading is a programming concept that allows multiple threads of execution to run concurrently within a single process. Each thread represents a separate flow of control, enabling programs to perform multiple tasks simultaneously.
+In my codeBy utilizing multiple threads, this approach aims to distribute the workload of matrix multiplication across multiple CPU cores, potentially reducing the overall computation time compared to performing the multiplications sequentially.
+The given code explanation.
+Generate Random Matrices: generate_random_matrices function generates a list of 1000 random matrices, each with a size of 1000x1000.
+Perform Multiplication with Different Numbers of Threads: The code iterates over different numbers of threads from 1 to 6. For each number of threads, it performs matrix multiplication using the perform_multiplication_with_threads function and records the time taken for the operation.
+Create DataFrame: The results are stored in a dictionary where the keys represent the number of threads and the values represent the time taken. This dictionary is then converted into a DataFrame using Pandas. The DataFrame is structured to have two columns: "Threads" and "Time Taken (s)". The number of threads is moved to the first column for better visualization.
+Visualize DataFrame: The DataFrame is displayed to view the time taken for matrix multiplication with different numbers of threads.
+Plot: Finally, a plot is generated using Matplotlib to visualize the relationship between the number of threads and the time taken for matrix multiplication. The x-axis represents the number of threads, and the y-axis represents the time taken in seconds. Each point on the plot corresponds to a specific number of threads, showing how the time taken varies as the number of threads increases.
